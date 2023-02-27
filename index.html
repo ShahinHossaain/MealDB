@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link daysiUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="bg-slate-800 text-white">
+            <div class="flex justify-between mx-16 p-5">
+                <h1 class="inline-block text-2xl font-bold">Tasty HUT</h1>
+                <button class="btn btn-outline btn-success">sign up</button>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div class="relative">
+                <img src="images/banner_1.png" alt="food" class="shadow-2xl rounded-none w-ful">
+                <div class="absolute inset-0">
+                  <div class="bg-black opacity-50 absolute inset-0"></div>
+                </div>
+                <div class="absolute inset-7 sm:inset-14 md:inset-24 lg:inset-32 xl:inset-44 text-center">
+                    <h1 class="text-xl sm:text-3xl lg:text-5xl font-extrabold text-white">Taste Our Delicious <br> Best Foods</h1>
+                    <p class="text-white my-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humou.</p>
+                    
+   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="hidden lg:block ml-40 w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search" class="block w-2/3 mx-auto p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:bg-slate-700" placeholder="Search food..." required>
+        <button type="submit" class="mt-3 md:mt-0 bg-green-600 rounded-md mb-1 text-white hover:text-black md:absolute md:right-28 lg:right-32 xl:right-44 bottom-1  text-sm px-4 py-2" onclick="searchBtn()">Search</button>
+    </div>
+
+
+                </div>
+            </div>
+            <!-- <div class="relative bottom-96">
+                <p class="text-3xl text-red-700">Shahin</p>
+            </div> -->
+        </section>
+    </header>
+
+    <main>
+        <!-- favourite section  -->
+        <section class="mx-20 mt-20">
+            <h1 class="text-3xl font-bold text-center mb-10">Your Favourite Food</h1>
+            <div class="md:grid grid-cols-2 gap-10" id="food-container">
+                
+            </div>
+            <div class="text-center">
+                <button class="px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-semibold mt-7 rounded-lg text-lg" id="show-all-btn" onclick="showDiv()">Show All</button>
+            </div>
+        </section>
+
+         <!-- modal  -->
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box relative">
+            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <h3 class="text-xl font-bold py-5" id="food-name"></h3>
+            <img src="" alt="" id="food-img" class="rounded-lg">
+            <p class="py-4" id="category"></p>
+            <p class="py-2" id="area"></p>
+            <p class="py-4" id="instruction"></p>
+            <p id="youtube"></p>
+          </div>
+        </div><param name="" value="">
+    </main>
+
+    <footer>
+        <section class="mt-16">
+            <div class="grid grid-cols-2 md:grid-cols-5 text-center">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-xl font-semibold mb-4">Section</h1>
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-xl font-semibold mb-4">Section</h1>
+                    <a href="#">UIUX Design</a>
+                    <a href="#">Product Design</a>
+                    <a href="#">Back End Developer</a>
+                    <a href="#">Front End Developer</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-xl font-semibold mb-4">Resource</h1>
+                    <a href="#">FAQ</a>
+                    <a href="#">Support</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="md:col-span-2">
+                    <h1 class="text-xl font-semibold mb-4">Subscribe to our newsletter</h1>
+                    <p class="my-3">There are many variations of passages of available, but the majority have suffered</p>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        </div>
+                        <input type="search" id="default-search" class="block w-2/3 mx-auto p-3 pl-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required>
+                        <button type="submit" class="bg-green-600 hover:bg-green-500 rounded-lg mt-2 lg:mt-5 text-white hover:text-black right-24 bottom-1  text-sm px-3 lg:px-5 py-1">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>
